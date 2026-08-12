@@ -13,6 +13,24 @@ export default function CatalogPage() {
 
   const catalogItems = [
     {
+      id: 'FirstRoom',
+      title: 'Test Room 1',
+      category: 'livingroom',
+      price: '$1,800',
+      thumbnail: scenes.bedroom.thumbnail,
+      tags: ['Bedroom', 'Balcony Access', 'Air Conditioner'],
+      specs: '55 m² • 1 Bed • 1 Bath'
+    },
+    {
+      id: 'SecondRoom',
+      title: 'Test Room 2',
+      category: 'livingroom',
+      price: '$1,800',
+      thumbnail: scenes.bedroom.thumbnail,
+      tags: ['Bedroom', 'Balcony Access', 'Air Conditioner'],
+      specs: '55 m² • 1 Bed • 1 Bath'
+    },
+    {
       id: 'bedroom',
       title: 'The Serene Suite (Bedroom)',
       category: 'bedroom',

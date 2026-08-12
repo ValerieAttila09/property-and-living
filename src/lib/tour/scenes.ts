@@ -4,6 +4,30 @@ export const PROPERTY = {
 };
 
 export const scenes: Record<string, any> = {
+  FirstRoom: {
+    id: 'FirstRoom',
+    title: 'FirstRoom',
+    image: '/panorama/room1.jpeg',
+    thumbnail: '/panorama/room1.jpeg',
+    floorplan: { x: 60, y: 25 },
+    defaultView: { yaw: '0deg', pitch: '0deg', fov: 70 },
+    hotspots: [
+      { id: 'to-secondroom', type: 'nav', target: 'SecondRoom', yaw: '22deg', pitch: '12deg', label: 'Room2' }
+    ],
+  },
+
+  SecondRoom: {
+    id: 'SecondRoom',
+    title: 'SecondRoom',
+    image: '/panorama/room2.jpeg',
+    thumbnail: '/panorama/room2.jpeg',
+    floorplan: { x: 20, y: 42 },
+    defaultView: { yaw: '0deg', pitch: '0deg', fov: 70 },
+    hotspots: [
+      { id: 'to-firstroom', type: 'nav', target: 'FirstRoom', yaw: '48deg', pitch: '-40deg', label: 'Room1' }
+    ],
+  },
+
   bedroom: {
     id: 'bedroom',
     title: 'Bedroom',
